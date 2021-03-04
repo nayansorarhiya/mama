@@ -1,0 +1,185 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ML</title>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" type= "text/css">
+   
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#hero"><h1><span>M</span>achine <span>L</span>earning</h1></a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger"><div class="bar"></div></div>
+              <ul>
+                <li><a href="#hero" data-after="Home">Home</a></li>
+                <li><a href="#projects" data-after="Projects">Project</a></li>
+                <li><a href="#about" data-after="About">Team</a></li>
+                <li><a href="#contact" data-after="Contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <img src="{{ url_for('static', filename='img/bkimg.jpg') }}" type="image" 
+      style="position: absolute; 
+             background-size: cover; 
+             background-position: top center;
+             z-index: -1;">
+             
+      <section id="hero">
+        <div class="hero container">
+          <div>
+            
+            <h1>Welcome to <span></span></h1>
+            <h1>Image Classification <span></span></h1>
+
+            <div>
+                {% block content %}{% endblock %}
+            </div>
+        
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title"> <span>Project</span> Information</h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 1</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="{{ url_for('static', filename='img/img-1.png') }}" type="image">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 2</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="{{ url_for('static', filename='img/img-1.png') }}" type="image">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 3</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="{{ url_for('static', filename='img/img-1.png') }}" type="image">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 4</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="{{ url_for('static', filename='img/img-1.png') }}" type="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{{ url_for('static', filename='img/img-2.png') }}" type="image" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Front End Developer</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni! Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt reprehenderit libero enim!</p>
+        <!-- <a href="#" class="cta">Download Resume</a> -->
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div><h1 class="section-title">Contact <span>info</span></h1></div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+91 96649 19955</h2>
+            <h2>+91 70464 29193</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>nayansorathiya3@gmail.com</h2>
+            <h2>parthsabhadiya511@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>A.D.Patel Institute Of Technology</h2>
+             <h2>New Vallabh Vidhyanagar, 
+               <h2>52 Vitthal Udyognagar-388121</h2>
+                <h2>Anand(Gujarat) India</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>M</span>achine <span>L</span>earning</h1></div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="{{ url_for('static', filename='img/fb.png') }}" type="image"></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="{{ url_for('static', filename='img/ln.png') }}" type="image"></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="{{ url_for('static', filename='img/it.png') }}" type="image"></a>
+        </div>
+        
+      </div>
+      <p>Copyright © 2020 ML-21. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
+</body>
+
+</html>
